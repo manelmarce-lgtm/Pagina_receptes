@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<title>Receptes</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="Style.css" rel="stylesheet">
+<style>
+	@media (max-width: 768px) {
+  .container { padding: 12px; }
+  .hero { flex-direction: column-reverse; align-items: stretch; }
+  .title-image { width: 100%; flex-basis: auto; }
+  .Last-Recipes-row { flex-direction: column; }
+  .Suscribe-row { flex-direction: column; align-items: stretch; }
+  input[type="email"] { width: 100%; max-width: none; margin-bottom: 8px; }
+  .popular-grid { grid-template-columns: 1fr; }
+  .about-actor { flex-direction: column; align-items: center; text-align: center; }
+  .about-img { width: 160px; }
+  
+  #header, #header2 { padding: 10px; }
+  .cta, .recipe-btn, .subscribe-btn { width: 100%; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+	<header id="header">
+		<div class="header-left">
+		<img src="logo.png" width="90" alt="logo">
+		</div>
+		<nav class="menu">
+		<a href="#">Last recipes</a>
+		<a href="#">Most popular recipes</a>
+		<a href="#">Categories</a>
+		</nav>
+		<div class="header-right">
+		<img src="usuario.png" width="32" alt="usuario" />
+		</div>
+	</header>
+	<main class="container">
+		<section id="title" class="hero">
+			<div class="title-text">
+				<div id="title-text-01">Healthy</div>
+				<div id="title-text-02">10 Minute Magic</div>
+				<div id="title-text-03">Orange Sauce</div>
+				<button class="cta">see recipe</button>
+				</div>
+				<div class="title-image">
+					<img src="generic.png" alt="imatge genrÃ¨rica"/>
+			</div>
+		</section>
+		<aside id="menu2" class="categories">
+			<p class="menu2-transparencia">View by category:</p>
+			<p><b>Appetizers</b></p>
+			<p><b>Beverages</b></p>
+			<p><b>Desserts</b></p>
+			<p><b>Healthy</b></p>
+		</aside>
+		<hr>
+		<h2 class="Last-Recipes-titles">Latest Recipes</h2>
+		<section class="Last-Recipes-row">
+			<article class="Last-Recipes-col">
+				<img src="generic.png" alt="imatge genrÃ¨rica"/>
+				<div class="Last-Recipes-title">Grandma's Butterscotch 	PIE</div>
+				<div class="Last-Recipes-subtitle">Healthy</div>
+				<div class="Last-Recipes-text">
+				Lorem ipsum dolor sit amet, consectetur adipiscingelit. Suspendisse 			feugiat viverra diam, ac tempus est faucibus in. Sed cursus antevel 			fermentum malesuada. Fusce placerat interdum sem, i[...]
+				</div>
+				<button class="recipe-btn">see recipe</button>
+			</article>
+			<article class="Last-Recipes-col">
+				<img src="generic.png" alt="imatge genrÃ¨rica" />
+				<div class="Last-Recipes-title">10 Minute Magic Orange Sauce</div>
+				<div class="Last-Recipes-subtitle">Healthy</div>
+				<div class="Last-Recipes-text">
+				Lorem ipsum dolor sit amet, consectetur adipiscingelit. Suspendisse 			feugiat viverra diam, ac tempus est faucibus in. Sed cursus antevel 			fermentum malesuada. Fusce placerat interdum sem, i[...]
+				</div>
+				<button class="recipe-btn">see recipe</button>
+			</article>
+		</section>
+		<br>	
+		<section class="Suscribe-row">
+			<div class="Suscribe-col">
+				<div class="Suscribe-title">Never miss a recipe</div>
+				<div class="Suscribe-text">Join thousands of Company subscribers and get our best recipes delivered each week!</div>
+			</div>
+			<div class="Suscribe-col">
+				<input type="email" placeholder="your email" />
+				<button class="subscribe-btn">botÃ³n</button>
+			</div>
+		</section>
+		<section class="popular">
+			<h2>Most popular recipes</h2>
+			<table>
+				<tr>
+					<td>
+						<div class="images">
+							<br>
+							<img src="generic.png" width="100" alt="imatge 		genrÃ¨rica" />
+							<div class="Suscribe-text">
+								Healthy
+							</div>
+							<div class="Suscribe-title">
+								Grantma's Butterscotch PIE
+							</div>
+						</div>
+					</td>	
+					<td>
+						<div class="images">
+							<br>
+							<img src="generic.png" width="100" alt="imatge 		genrÃ¨rica" />
+							<div class="Suscribe-text">
+								Healthy
+							</div>
+							<div class="Suscribe-title">
+								10 Minute Magic Orange Sauce
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="images">
+							<br>
+							<img src="generic.png" width="100" alt="imatge 		genrÃ¨rica"/>
+							<div class="Suscribe-text">
+								Broad/Sweet
+							</div>
+							<div class="Suscribe-title">
+								Perfect Avocado Toast For Breackfast
+							</div>
+						</div>
+					</td>
+					<td>
+						<div class="images">
+							<br>
+							<img src="generic.png" width="100" alt="imatge 		genrÃ¨rica"/>
+							<div class="Suscribe-text">
+								Healthy
+							</div>
+							<div class="Suscribe-title">
+								Summer Berry Parfaid
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		<br>
+		</section>
+
+		<section id="header-01" class="about-actor">
+			<img src="usuario.png" alt="imatge genÃ¨rica" class="about-img">
+			<div class="about-text">
+				<div id="usuario-text-01">About the actor</div>
+				<div id="usuario-text-02">John Doe</div>
+				<div id="usuario-text-03">Lorem pisum dolor sit amet, consectetur adpisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscpi[...]</div>
+			</div>
+		</section>
+	</main>
+	<footer id="header2">
+		<div class="footer-left">
+			<img src="logo.png" width="90" alt="logo">
+		</div>
+		<nav class="menu2">
+			<a href="#">Last recipes</a>
+			<a href="#">Most popular recipes</a>
+			<a href="#">Categories</a>
+		</nav>
+		<div class="footer-right">
+			<img src="usuario.png" width="32" alt="imatge genÃ¨rica"/>
+			<img src="usuario.png" width="32" alt="imatge genÃ¨rica"/>
+			<img src="usuario.png" width="32" alt="imatge genÃ¨rica"/>
+			<img src="usuario.png" width="32" alt="imatge genÃ¨rica"/>
+		</div>
+	</footer>
+</body>
+
+</html>
